@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-01-30T20:28:16.651930" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Interview" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview">
+<suite id="s1-s1" name="Robo Int1" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int1.robot">
+<test id="s1-s1-t1" name="Verify User Login Functionality" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:17.349691" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.348690" elapsed="9.848900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:28:27.204598" elapsed="2.046963"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inputting username and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:29.253560" elapsed="0.008002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:29.270194" level="INFO">Typing text 'Student' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:29.262771" elapsed="0.759673"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:30.026650" level="INFO">Typing text 'Password123' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:30.025658" elapsed="0.775869"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:30.803965" level="INFO">Clicking button 'id:submit'.</msg>
+<arg>id:submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:30.802527" elapsed="0.424410"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Waiting for dashboard text: ${Dashboard_Text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.227936" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${Dashboard_Text}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.228937" elapsed="0.040758"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:31.286648" level="INFO">Current page contains text 'Congratulations'.</msg>
+<arg>${Dashboard_Text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.269695" elapsed="0.017962"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login successful! Dashboard loaded.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.287657" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.288657" elapsed="15.018969"/>
+</kw>
+<doc>This test case verifies that the user can log in successfully and is redirected to the dashboard.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.347693" elapsed="28.966960"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:16.721712" elapsed="29.618105"/>
+</suite>
+<status status="PASS" start="2025-01-30T20:28:16.691985" elapsed="29.653831"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Interview" id="s1" pass="1" fail="0" skip="0">Robot Interview</stat>
+<stat name="Robo Int1" id="s1-s1" pass="1" fail="0" skip="0">Robot Interview.Robo Int1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-01-28T11:28:04.939893" rpa="false" schemaversion="5">
+<suite id="s1" name="Robo Int4" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int4.robot">
+<test id="s1-t1" name="Dropdown Selection Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:28:05.440513" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/dropdown'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-28T11:28:05.440513" elapsed="7.358867"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-28T11:28:12.801364" elapsed="0.103789"/>
+</kw>
+<kw name="Select Dropdown Value">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-28T11:28:12.907159" elapsed="0.072091"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-01-28T11:28:12.979250" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 2.</msg>
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>${VALUE_TO_SELECT}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-01-28T11:28:12.979250" elapsed="0.147908"/>
+</kw>
+<doc>Select a value from the dropdown menu.</doc>
+<status status="PASS" start="2025-01-28T11:28:12.907159" elapsed="0.221365"/>
+</kw>
+<kw name="Verify Selected Value">
+<msg time="2025-01-28T11:28:13.136538" level="FAIL">No keyword with name 'Verify Selected Value' found.</msg>
+<status status="FAIL" start="2025-01-28T11:28:13.135535" elapsed="0.001003">No keyword with name 'Verify Selected Value' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-28T11:28:13.136538" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-28T11:28:05.439929" elapsed="7.697960">No keyword with name 'Verify Selected Value' found.</status>
+</test>
+<status status="FAIL" start="2025-01-28T11:28:04.941893" elapsed="8.200512"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robo Int4" id="s1" pass="0" fail="1" skip="0">Robo Int4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

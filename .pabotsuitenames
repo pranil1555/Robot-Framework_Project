@@ -1,0 +1,8 @@
+datasources:783b7a1b94d822ee2a9498534acbe86076221bee
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:f92d3dbbe036a4822334738de9a41c613294cd9f
+--suite Robot Interview.Robo Int1
+--suite Robot Interview.Robo Int2
+--suite Robot Interview.Robo Int3
+--suite Robot Interview.Robo Int4

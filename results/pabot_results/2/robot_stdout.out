@@ -1,0 +1,28 @@
+==============================================================================
+Robot Interview                                                               
+==============================================================================
+Robot Interview.Robo Int3                                                     
+==============================================================================
+File Upload Test                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int3.robot:13
+    T:  File Upload Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int3.robot:17
+      Upload File    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int3.robot:28
+      Wait Until Element Is Visible    ${UPLOAD_BUTTON}    timeout=10
+      |  ${UPLOAD_BUTTON} = type=submit (str)
+______________________________________________________________________________
+| FAIL |
+Element 'type=submit' not visible after 10 seconds.
+------------------------------------------------------------------------------
+Robot Interview.Robo Int3                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Robot Interview                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\results\pabot_results\2\output.xml

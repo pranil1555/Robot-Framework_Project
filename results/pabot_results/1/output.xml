@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-01-30T20:28:16.556169" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Interview" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview">
+<suite id="s1-s1" name="Robo Int2" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int2.robot">
+<test id="s1-s1-t1" name="Verify Webpage Title" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:17.359214" level="INFO">Opening browser 'Chrome' to base url 'https://example.com'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.357702" elapsed="9.622412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:28:26.998125" elapsed="1.015823"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:28.135771" level="INFO">${Actual_Title} = Example Domain</msg>
+<var>${Actual_Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.014950" elapsed="0.120821"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Actual_Title}</arg>
+<arg>${Expected_Title}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.137035" elapsed="0.001581"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T20:28:28.140614" level="INFO">Webpage title verified successfully: Example Domain</msg>
+<arg>Webpage title verified successfully: ${Actual_Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.138616" elapsed="0.001998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.140614" elapsed="10.509628"/>
+</kw>
+<doc>This test case verifies that the title of the webpage matches the expected value.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.356691" elapsed="21.294551"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:16.646929" elapsed="22.013424"/>
+</suite>
+<status status="PASS" start="2025-01-30T20:28:16.615931" elapsed="22.046351"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Interview" id="s1" pass="1" fail="0" skip="0">Robot Interview</stat>
+<stat name="Robo Int2" id="s1-s1" pass="1" fail="0" skip="0">Robot Interview.Robo Int2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

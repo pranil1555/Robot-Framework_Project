@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.12.5 on win32)" generated="2025-01-30T20:29:41.511248" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Interview" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview">
+<suite id="s1-s1" name="Robo Int1" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int1.robot">
+<test id="s1-s1-t1" name="Verify User Login Functionality" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:17.349691" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.348690" elapsed="9.848900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:28:27.204598" elapsed="2.046963"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Inputting username and password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:29.253560" elapsed="0.008002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:29.270194" level="INFO">Typing text 'Student' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:29.262771" elapsed="0.759673"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:30.026650" level="INFO">Typing text 'Password123' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:30.025658" elapsed="0.775869"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:30.803965" level="INFO">Clicking button 'id:submit'.</msg>
+<arg>id:submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:30.802527" elapsed="0.424410"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Waiting for dashboard text: ${Dashboard_Text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.227936" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${Dashboard_Text}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.228937" elapsed="0.040758"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:31.286648" level="INFO">Current page contains text 'Congratulations'.</msg>
+<arg>${Dashboard_Text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.269695" elapsed="0.017962"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login successful! Dashboard loaded.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.287657" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:28:31.288657" elapsed="15.018969"/>
+</kw>
+<doc>This test case verifies that the user can log in successfully and is redirected to the dashboard.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.347693" elapsed="28.966960"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:16.721000" elapsed="28.967000"/>
+</suite>
+<suite id="s1-s2" name="Robo Int2" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int2.robot">
+<test id="s1-s2-t1" name="Verify Webpage Title" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:17.359214" level="INFO">Opening browser 'Chrome' to base url 'https://example.com'.</msg>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.357702" elapsed="9.622412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:28:26.998125" elapsed="1.015823"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:28.135771" level="INFO">${Actual_Title} = Example Domain</msg>
+<var>${Actual_Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.014950" elapsed="0.120821"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Actual_Title}</arg>
+<arg>${Expected_Title}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.137035" elapsed="0.001581"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T20:28:28.140614" level="INFO">Webpage title verified successfully: Example Domain</msg>
+<arg>Webpage title verified successfully: ${Actual_Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.138616" elapsed="0.001998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:28:28.140614" elapsed="10.509628"/>
+</kw>
+<doc>This test case verifies that the title of the webpage matches the expected value.</doc>
+<status status="PASS" start="2025-01-30T20:28:17.356691" elapsed="21.294551"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:16.646929" elapsed="22.013424"/>
+</suite>
+<suite id="s1-s3" name="Robo Int3" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int3.robot">
+<test id="s1-s3-t1" name="File Upload Test" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:45.173662" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/upload'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:45.172660" elapsed="13.391687"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:28:58.571941" elapsed="0.232614"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T20:28:58.806555" level="INFO">Upload Button Locator: type=submit</msg>
+<arg>Upload Button Locator: ${UPLOAD_BUTTON}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T20:28:58.804555" elapsed="0.002000"/>
+</kw>
+<kw name="Upload File">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T20:28:58.814563" level="INFO">Locating upload field: id:fileInput</msg>
+<arg>Locating upload field: ${UPLOAD_FIELD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T20:28:58.814563" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:58.817892" level="INFO">Typing text 'C:\Users\vaish\robot.txt' into text field 'id:fileInput'.</msg>
+<arg>${UPLOAD_FIELD}</arg>
+<arg>${FILE_PATH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:28:58.815562" elapsed="0.663838"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T20:28:59.480402" level="INFO">Upload field value entered: C:\Users\vaish\robot.txt</msg>
+<arg>Upload field value entered: ${FILE_PATH}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T20:28:59.480402" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:29:10.282949" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2-selenium-screenshot-1.png"&gt;&lt;img src="2-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-30T20:29:10.359349" level="FAIL">Element 'type=submit' not visible after 10 seconds.</msg>
+<arg>${UPLOAD_BUTTON}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-01-30T20:28:59.481402" elapsed="11.726781">Element 'type=submit' not visible after 10 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${UPLOAD_BUTTON}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.234575" elapsed="0.001020"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${UPLOAD_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.236591" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Clicking upload button: ${UPLOAD_BUTTON}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.236591" elapsed="0.002516"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${UPLOAD_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.241101" elapsed="0.000000"/>
+</kw>
+<doc>Locate the file upload field and upload the specified file.</doc>
+<status status="FAIL" start="2025-01-30T20:28:58.812592" elapsed="12.450467">Element 'type=submit' not visible after 10 seconds.</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${UPLOAD_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.266083" elapsed="0.001001"/>
+</kw>
+<kw name="Verify Upload Status">
+<doc>Verify that the file upload status matches the expected value.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.268116" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-30T20:29:11.270124" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2025-01-30T20:28:45.171665" elapsed="26.119033">Element 'type=submit' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2025-01-30T20:28:44.495291" elapsed="26.879058"/>
+</suite>
+<suite id="s1-s4" name="Robo Int4" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int4.robot">
+<test id="s1-s4-t1" name="Dropdown Selection Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:54.233492" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/dropdown'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:54.232492" elapsed="16.470100"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:29:10.740266" elapsed="0.350851"/>
+</kw>
+<kw name="Select Dropdown Value">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-30T20:29:11.138283" elapsed="1.053585"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:29:12.198867" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 2.</msg>
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>${VALUE_TO_SELECT}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-01-30T20:29:12.193867" elapsed="4.041135"/>
+</kw>
+<doc>Select a value from the dropdown menu.</doc>
+<status status="PASS" start="2025-01-30T20:29:11.122344" elapsed="5.116603"/>
+</kw>
+<kw name="Verify Selected Value">
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:29:16.584527" level="INFO">${selected_value} = Option 2</msg>
+<var>${selected_value}</var>
+<arg>${DROPDOWN_FIELD}</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.249584" elapsed="0.335950"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${selected_value}</arg>
+<arg>${EXPECTED_VALUE}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.595728" elapsed="0.060523"/>
+</kw>
+<doc>Verify that the selected value matches the expected value.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.240955" elapsed="0.417304"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.661504" elapsed="20.251028"/>
+</kw>
+<status status="PASS" start="2025-01-30T20:28:54.230484" elapsed="42.688054"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:53.579086" elapsed="43.348454"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="FAIL" start="2025-01-30T20:28:16.615000" elapsed="80.318000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Interview" id="s1" pass="3" fail="1" skip="0">Robot Interview</stat>
+<stat name="Robo Int1" id="s1-s1" pass="1" fail="0" skip="0">Robot Interview.Robo Int1</stat>
+<stat name="Robo Int2" id="s1-s2" pass="1" fail="0" skip="0">Robot Interview.Robo Int2</stat>
+<stat name="Robo Int3" id="s1-s3" pass="0" fail="1" skip="0">Robot Interview.Robo Int3</stat>
+<stat name="Robo Int4" id="s1-s4" pass="1" fail="0" skip="0">Robot Interview.Robo Int4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-01-30T20:28:53.396266" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Interview" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview">
+<suite id="s1-s1" name="Robo Int4" source="C:\Users\vaish\PycharmProjects\pranil_projects\selenium_interview\Python\robot_interview\robo_int4.robot">
+<test id="s1-s1-t1" name="Dropdown Selection Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:28:54.233492" level="INFO">Opening browser 'Chrome' to base url 'https://practice.expandtesting.com/dropdown'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T20:28:54.232492" elapsed="16.470100"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T20:29:10.740266" elapsed="0.350851"/>
+</kw>
+<kw name="Select Dropdown Value">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-30T20:29:11.138283" elapsed="1.053585"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:29:12.198867" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 2.</msg>
+<arg>${DROPDOWN_FIELD}</arg>
+<arg>${VALUE_TO_SELECT}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-01-30T20:29:12.193867" elapsed="4.041135"/>
+</kw>
+<doc>Select a value from the dropdown menu.</doc>
+<status status="PASS" start="2025-01-30T20:29:11.122344" elapsed="5.116603"/>
+</kw>
+<kw name="Verify Selected Value">
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2025-01-30T20:29:16.584527" level="INFO">${selected_value} = Option 2</msg>
+<var>${selected_value}</var>
+<arg>${DROPDOWN_FIELD}</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.249584" elapsed="0.335950"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${selected_value}</arg>
+<arg>${EXPECTED_VALUE}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.595728" elapsed="0.060523"/>
+</kw>
+<doc>Verify that the selected value matches the expected value.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.240955" elapsed="0.417304"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T20:29:16.661504" elapsed="20.251028"/>
+</kw>
+<status status="PASS" start="2025-01-30T20:28:54.230484" elapsed="42.688054"/>
+</test>
+<status status="PASS" start="2025-01-30T20:28:53.579086" elapsed="43.348454"/>
+</suite>
+<status status="PASS" start="2025-01-30T20:28:53.486966" elapsed="43.446089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Interview" id="s1" pass="1" fail="0" skip="0">Robot Interview</stat>
+<stat name="Robo Int4" id="s1-s1" pass="1" fail="0" skip="0">Robot Interview.Robo Int4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
